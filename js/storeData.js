@@ -10,9 +10,9 @@ const getLocalDataValue = () => {
 const localData = getLocalDataValue();
 
 const formDataObj = {
-  name: localData ? localData.name : '',
-  email: localData ? localData.email : '',
-  message: localData ? localData.message : '',
+  name: '',
+  email: '',
+  message: '',
 };
 
 const dataStoreLocal = (ev) => {
