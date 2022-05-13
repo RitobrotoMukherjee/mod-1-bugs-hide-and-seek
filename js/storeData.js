@@ -17,6 +17,7 @@ const formDataObj = {
 
 const dataStoreLocal = (ev) => {
   const { target } = ev;
+  ev.preventDefault();
   const value = target.value.trim();
   if (target.name === 'name') {
     formDataObj.name = value;

@@ -34,12 +34,12 @@ seeCloseProjectButton.forEach((item) => {
 const validationWithMessage = () => {
   const errorP = document.getElementById('error-message');
   if (email.value === email.value.toLowerCase()) {
-    formErrorDiv.style.width = '0px';
-    formErrorDiv.style.visibility = 'hidden';
+    formErrorDiv.style.visibility = 'visible';
+    formErrorDiv.style.width = '301.865px';
     return false;
   }
-  formErrorDiv.style.visibility = 'visible';
-  formErrorDiv.style.width = '301.865px';
+  formErrorDiv.style.width = '0px';
+  formErrorDiv.style.visibility = 'hidden';
   errorP.textContent = `Email Has to be in lower case, You passed: ${email.value}`;
   return true;
 };
